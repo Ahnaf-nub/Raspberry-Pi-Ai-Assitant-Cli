@@ -4,10 +4,10 @@
 echo "Installing the OpenAI library..."
 pip3 install openai --break-system-packages
 
-# Get the absolute directory path of the setup script (assuming chat.py is in the same directory)
-SCRIPT_DIR=$(dirname "$(realpath "$0")")
+# Define the exact path to the `chat.py` file
+SCRIPT_DIR="/home/pi/Raspberry-Pi-Ai-Assitant-Cli"
 
-# Add an alias to .bashrc that points to the absolute path of chat.py
+# Add an alias to .bashrc pointing to the absolute path of chat.py
 echo "Adding alias to .bashrc..."
 echo "alias chat='python3 \"$SCRIPT_DIR/chat.py\"'"' "$@"' >> ~/.bashrc
 
