@@ -14,5 +14,6 @@ echo "alias chat='python3 \"$SCRIPT_DIR/chat.py\"'"' "$@"' >> ~/.bashrc
 # Immediately load the new alias into the current shell session
 echo "Applying alias for the current session..."
 alias chat="python3 \"$SCRIPT_DIR/chat.py\""' "$@"'
+source ~/.bashrc
 
 echo "Setup complete! You can now use 'chat your query' to interact with the assistant."
